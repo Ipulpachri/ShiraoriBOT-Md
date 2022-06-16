@@ -7,7 +7,7 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fs = require('fs')
 let handler = async (m) => {
 let esce = `
-Bot ini Menggunakan Script Dari
+Bot ini Menggunakan Script Ori Dari:
 
 https://github.com/ilmanhdyt/ShiraoriBOT-Md`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -19,8 +19,8 @@ https://github.com/ilmanhdyt/ShiraoriBOT-Md`
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '💠 Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+               displayText: ' Source Code',
+               url: 'https://github.com/Ipulpachri'
              }
 
            },
