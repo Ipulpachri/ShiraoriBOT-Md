@@ -19,7 +19,7 @@ Arigatou!
 
 Contact person Owner:
 wa.me/6285713041886 (Owner)`
-let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/ca517a39ce85c8a4c0479.jpg' }}, { upload: conn.waUploadToServer })
+let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/b87f4a8f68fb59ce2c59e.jpg' }}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
