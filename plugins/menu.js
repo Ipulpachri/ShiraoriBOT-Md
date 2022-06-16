@@ -5,30 +5,30 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-╭────ꕥ %me ꕥ────
-│✾ Version: %version
-│✾ Library: Baileys-MD
-│✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
-│✾ Runtime: %uptime
-╰❑
-╭─❑ 「 INFO USER 」 ❑──
-│ ✾ Name: %name
-│ ✾ Status: ---
-│ ✾ Limit: %limit
-│ ✾ Money: %money
-│ ✾ Exp: %totalexp
-│ ✾ Level: %level
-│ ✾ Role: %role
-╰❑
-╭─❑ 「 INFORMASI 」 ❑──
-│ Bot ini masih tahap beta
-│ apabila ada bug/eror harap
-│ lapor ke owner
-╰❑
+❏––––––ꕥ 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 ꕥ––––––
+┊✾ Version: %version
+┊✾ Library: Baileys-MD
+┊✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
+┊✾ Runtime: %uptime
+┗❑
+❏––––––『 INFO USER 』––––––
+┊ ✾ Name: %name
+┊ ✾ Status: ---
+┊ ✾ Limit: %limit
+┊ ✾ Money: %money
+┊ ✾ Exp: %totalexp
+┊ ✾ Level: %level
+┊ ✾ Role: %role
+┗❑
+❏––––––『 INFORMASI 』––––––
+┊ Bot ini masih tahap beta
+┊ apabila ada bug/eror harap
+┊ lapor ke #owner
+┗❑
 %readmore`.trim(),
-  header: '╭─「 %category 」',
-  body: '│ • %cmd %islimit %isPremium',
-  footer: '╰────\n',
+  header: '❏––––––『 %category 』––––––',
+  body: '┊✦  %cmd %islimit %isPremium',
+  footer: '┗━═┅═━––––––๑\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -312,18 +312,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari"
+  res = "Selamat dinihari kak"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "Selamat pagi kak"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "Selamat siang kak"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "Selamat sore kak"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "Selamat malam kak"
   }
   return res
 }
