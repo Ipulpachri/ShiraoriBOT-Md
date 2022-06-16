@@ -19,7 +19,7 @@ https://github.com/ilmanhdyt/ShiraoriBOT-Md`
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: ' Source Code',
+               displayText: 'Source Code',
                url: 'https://github.com/Ipulpachri'
              }
 
